@@ -1,0 +1,42 @@
+{
+  "single": {
+    "common_caps": {
+      "name": "single",
+      "build": "browserstack-serenity-sample"
+    },
+    "platform": {
+      "chrome": {
+        "browser": "Chrome",
+        "browser_version": "latest",
+        "os": "Windows",
+        "os_version": "11"
+      }
+    }
+  },
+  "parallel": {
+    "common_caps": {
+      "name": "parallel",
+      "build": "browserstack-serenity-sample"
+    },
+    "platform": {
+      "chrome": {
+        "browser": "Chrome",
+        "browser_version": "latest",
+        "os": "Windows",
+        "os_version": "11"
+      },
+      "firefox": {
+        "browser": "Firefox",
+        "browser_version": "latest",
+        "os": "OS X",
+        "os_version": "Big Sur"
+      },
+      "edge": {
+        "browser": "Edge",
+        "browser_version": "latest",
+        "os": "OS X",
+        "os_version": "Big Sur"
+      }
+    }
+  }
+}

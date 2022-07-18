@@ -1,0 +1,972 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;title&gt;StackDemo&lt;/title&gt;<br/>
+  &lt;link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml"&gt;<br/>
+  &lt;meta name="viewport" content="initial-scale=1.0, width=device-width"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/412b7dee.11f4ec51.chunk.css" as="style"&gt;<br/>
+  &lt;link rel="stylesheet" href="/_next/static/chunks/412b7dee.11f4ec51.chunk.css" data-n-g=""&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/styles.e2bb0603.chunk.css" as="style"&gt;<br/>
+  &lt;link rel="stylesheet" href="/_next/static/chunks/styles.e2bb0603.chunk.css" data-n-g=""&gt;<br/>
+  &lt;noscript data-n-css="true"&gt;&lt;/noscript&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/main-127f4130b2ee8251cb07.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/webpack-248a2eecd85f348c85bf.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/framework.9707fddd9ae5927c17c3.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/commons.8dd95e2c8a426fce4243.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/styles.b589c95bae47a4b56802.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/29107295.cc37323fff835cb3f1a5.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/b8893a6f06b70a9cc8257c2531fbea864096704d.05e7f7f46ea57d13f14e.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/5dd68d992e454f53e934be0a6bdc449c090bf9c7.be8cc35b25cafdb02160.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/2b8c65fe6e4196f9b8c8b1e63b2b0283938369f1.26e165a8ba5ecf775e27.js" as="script"&gt;<br/>
+  &lt;link rel="preload" href="/_next/static/chunks/pages/index-8721a89f5234d4c7bdb7.js" as="script"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/29107295.cc37323fff835cb3f1a5.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/b8893a6f06b70a9cc8257c2531fbea864096704d.05e7f7f46ea57d13f14e.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/5dd68d992e454f53e934be0a6bdc449c090bf9c7.be8cc35b25cafdb02160.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/2b8c65fe6e4196f9b8c8b1e63b2b0283938369f1.26e165a8ba5ecf775e27.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/pages/index-8721a89f5234d4c7bdb7.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/pages/offers-3832cb0fdc01a44c7e74.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/pages/orders-5427864b636363f71c65.js"&gt;<br/>
+  &lt;link as="script" rel="prefetch" href="/_next/static/chunks/pages/favourites-a3609f4ba87a87d734ac.js"&gt;<br/>
+  &lt;style data-emotion="css"&gt;&lt;/style&gt;<br/>
+  &lt;style data-jss="" data-meta="MuiTouchRipple"&gt;<br/>
+.MuiTouchRipple-root {<br/>
+  top: 0;<br/>
+  left: 0;<br/>
+  right: 0;<br/>
+  bottom: 0;<br/>
+  z-index: 0;<br/>
+  overflow: hidden;<br/>
+  position: absolute;<br/>
+  border-radius: inherit;<br/>
+  pointer-events: none;<br/>
+}<br/>
+.MuiTouchRipple-ripple {<br/>
+  opacity: 0;<br/>
+  position: absolute;<br/>
+}<br/>
+.MuiTouchRipple-rippleVisible {<br/>
+  opacity: 0.3;<br/>
+  animation: MuiTouchRipple-keyframes-enter 550ms cubic-bezier(0.4, 0, 0.2, 1);<br/>
+  transform: scale(1);<br/>
+}<br/>
+.MuiTouchRipple-ripplePulsate {<br/>
+  animation-duration: 200ms;<br/>
+}<br/>
+.MuiTouchRipple-child {<br/>
+  width: 100%;<br/>
+  height: 100%;<br/>
+  display: block;<br/>
+  opacity: 1;<br/>
+  border-radius: 50%;<br/>
+  background-color: currentColor;<br/>
+}<br/>
+.MuiTouchRipple-childLeaving {<br/>
+  opacity: 0;<br/>
+  animation: MuiTouchRipple-keyframes-exit 550ms cubic-bezier(0.4, 0, 0.2, 1);<br/>
+}<br/>
+.MuiTouchRipple-childPulsate {<br/>
+  top: 0;<br/>
+  left: 0;<br/>
+  position: absolute;<br/>
+  animation: MuiTouchRipple-keyframes-pulsate 2500ms cubic-bezier(0.4, 0, 0.2, 1) 200ms infinite;<br/>
+}<br/>
+@-webkit-keyframes MuiTouchRipple-keyframes-enter {<br/>
+  0% {<br/>
+    opacity: 0.1;<br/>
+    transform: scale(0);<br/>
+  }<br/>
+  100% {<br/>
+    opacity: 0.3;<br/>
+    transform: scale(1);<br/>
+  }<br/>
+}<br/>
+@-webkit-keyframes MuiTouchRipple-keyframes-exit {<br/>
+  0% {<br/>
+    opacity: 1;<br/>
+  }<br/>
+  100% {<br/>
+    opacity: 0;<br/>
+  }<br/>
+}<br/>
+@-webkit-keyframes MuiTouchRipple-keyframes-pulsate {<br/>
+  0% {<br/>
+    transform: scale(1);<br/>
+  }<br/>
+  50% {<br/>
+    transform: scale(0.92);<br/>
+  }<br/>
+  100% {<br/>
+    transform: scale(1);<br/>
+  }<br/>
+}<br/>
+&lt;/style&gt;<br/>
+  &lt;style data-jss="" data-meta="MuiButtonBase"&gt;<br/>
+.MuiButtonBase-root {<br/>
+  color: inherit;<br/>
+  border: 0;<br/>
+  cursor: pointer;<br/>
+  margin: 0;<br/>
+  display: inline-flex;<br/>
+  outline: 0;<br/>
+  padding: 0;<br/>
+  position: relative;<br/>
+  align-items: center;<br/>
+  user-select: none;<br/>
+  border-radius: 0;<br/>
+  vertical-align: middle;<br/>
+  -moz-appearance: none;<br/>
+  justify-content: center;<br/>
+  text-decoration: none;<br/>
+  background-color: transparent;<br/>
+  -webkit-appearance: none;<br/>
+  -webkit-tap-highlight-color: transparent;<br/>
+}<br/>
+.MuiButtonBase-root::-moz-focus-inner {<br/>
+  border-style: none;<br/>
+}<br/>
+.MuiButtonBase-root.Mui-disabled {<br/>
+  cursor: default;<br/>
+  pointer-events: none;<br/>
+}<br/>
+@media print {<br/>
+  .MuiButtonBase-root {<br/>
+    -webkit-print-color-adjust: exact;<br/>
+  }<br/>
+}<br/>
+&lt;/style&gt;<br/>
+  &lt;style data-jss="" data-meta="MuiIconButton"&gt;<br/>
+.MuiIconButton-root {<br/>
+  flex: 0 0 auto;<br/>
+  color: rgba(0, 0, 0, 0.54);<br/>
+  padding: 12px;<br/>
+  overflow: visible;<br/>
+  font-size: 1.5rem;<br/>
+  text-align: center;<br/>
+  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;<br/>
+  border-radius: 50%;<br/>
+}<br/>
+.MuiIconButton-root:hover {<br/>
+  background-color: rgba(0, 0, 0, 0.04);<br/>
+}<br/>
+.MuiIconButton-root.Mui-disabled {<br/>
+  color: rgba(0, 0, 0, 0.26);<br/>
+  background-color: transparent;<br/>
+}<br/>
+@media (hover: none) {<br/>
+  .MuiIconButton-root:hover {<br/>
+    background-color: transparent;<br/>
+  }<br/>
+}<br/>
+.MuiIconButton-edgeStart {<br/>
+  margin-left: -12px;<br/>
+}<br/>
+.MuiIconButton-sizeSmall.MuiIconButton-edgeStart {<br/>
+  margin-left: -3px;<br/>
+}<br/>
+.MuiIconButton-edgeEnd {<br/>
+  margin-right: -12px;<br/>
+}<br/>
+.MuiIconButton-sizeSmall.MuiIconButton-edgeEnd {<br/>
+  margin-right: -3px;<br/>
+}<br/>
+.MuiIconButton-colorInherit {<br/>
+  color: inherit;<br/>
+}<br/>
+.MuiIconButton-colorPrimary {<br/>
+  color: #3f51b5;<br/>
+}<br/>
+.MuiIconButton-colorPrimary:hover {<br/>
+  background-color: rgba(63, 81, 181, 0.04);<br/>
+}<br/>
+@media (hover: none) {<br/>
+  .MuiIconButton-colorPrimary:hover {<br/>
+    background-color: transparent;<br/>
+  }<br/>
+}<br/>
+.MuiIconButton-colorSecondary {<br/>
+  color: #f50057;<br/>
+}<br/>
+.MuiIconButton-colorSecondary:hover {<br/>
+  background-color: rgba(245, 0, 87, 0.04);<br/>
+}<br/>
+@media (hover: none) {<br/>
+  .MuiIconButton-colorSecondary:hover {<br/>
+    background-color: transparent;<br/>
+  }<br/>
+}<br/>
+.MuiIconButton-sizeSmall {<br/>
+  padding: 3px;<br/>
+  font-size: 1.125rem;<br/>
+}<br/>
+.MuiIconButton-label {<br/>
+  width: 100%;<br/>
+  display: flex;<br/>
+  align-items: inherit;<br/>
+  justify-content: inherit;<br/>
+}<br/>
+&lt;/style&gt;<br/>
+  &lt;style data-jss="" data-meta="MuiSvgIcon"&gt;<br/>
+.MuiSvgIcon-root {<br/>
+  fill: currentColor;<br/>
+  width: 1em;<br/>
+  height: 1em;<br/>
+  display: inline-block;<br/>
+  font-size: 1.5rem;<br/>
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;<br/>
+  flex-shrink: 0;<br/>
+  user-select: none;<br/>
+}<br/>
+.MuiSvgIcon-colorPrimary {<br/>
+  color: #3f51b5;<br/>
+}<br/>
+.MuiSvgIcon-colorSecondary {<br/>
+  color: #f50057;<br/>
+}<br/>
+.MuiSvgIcon-colorAction {<br/>
+  color: rgba(0, 0, 0, 0.54);<br/>
+}<br/>
+.MuiSvgIcon-colorError {<br/>
+  color: #f44336;<br/>
+}<br/>
+.MuiSvgIcon-colorDisabled {<br/>
+  color: rgba(0, 0, 0, 0.26);<br/>
+}<br/>
+.MuiSvgIcon-fontSizeInherit {<br/>
+  font-size: inherit;<br/>
+}<br/>
+.MuiSvgIcon-fontSizeSmall {<br/>
+  font-size: 1.25rem;<br/>
+}<br/>
+.MuiSvgIcon-fontSizeLarge {<br/>
+  font-size: 2.1875rem;<br/>
+}<br/>
+&lt;/style&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;div id="__next"&gt;<br/>
+   &lt;div&gt;<br/>
+    &lt;div class="App"&gt;<br/>
+     &lt;div class="Navbar_root__2kbI9"&gt;<br/>
+      &lt;div class="mx-auto max-w-8xl px-6"&gt;<br/>
+       &lt;div class="flex justify-between align-center flex-row py-4 md:py-6 :py-6 relative"&gt;<br/>
+        &lt;div class="flex flex-1 items-center"&gt;<br/>
+         &lt;a class="Navbar_logo__26S5Y" href="/"&gt;<br/>
+          &lt;svg width="257" height="45" viewbox="0 0 257 45" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;<br/>
+           &lt;g filter="url(#filter0_d)"&gt;<br/>
+            &lt;rect x="181.442" y="7.55676" width="69.0578" height="27.3019" fill="#EEEEEE"&gt;&lt;/rect&gt;<br/>
+           &lt;/g&gt;&lt;path d="M190.008 29.3796H195.362C196.544 29.3796 197.543 29.1282 198.358 28.6254C199.18 28.1575 199.822 27.5639 200.283 26.8446C200.456 26.5722 200.604 26.3103 200.727 26.0589C200.842 25.8005 200.929 25.5072 200.987 25.179C201.109 24.5295 201.17 23.3842 201.17 21.743C201.17 20.1996 201.131 19.1137 201.051 18.4852C200.95 17.8566 200.709 17.256 200.327 16.6834C199.259 14.9794 197.659 14.1204 195.524 14.1064H190.008V29.3796ZM192.398 16.2958H195.254C196.465 16.2679 197.403 16.6973 198.066 17.5843C198.39 17.9404 198.596 18.4048 198.683 18.9775C198.747 19.5502 198.78 20.4999 198.78 21.8268C198.78 23.1886 198.747 24.1175 198.683 24.6133C198.61 25.1161 198.441 25.5316 198.174 25.8599C197.568 26.7468 196.595 27.1903 195.254 27.1903H192.398V16.2958Z" fill="#111111"&gt;&lt;/path&gt;&lt;path d="M203.518 29.3796H213.588V27.1903H205.909V22.7068H212.464V20.6536H205.909V16.2958H213.588V14.1064H203.518V29.3796Z" fill="#111111"&gt;&lt;/path&gt;&lt;path d="M215.406 29.3796H217.797V19.8574H217.84L221.139 27.1903H223.129L226.428 19.8574H226.482V29.3796H228.873V14.1064H226.612L222.177 24.0581L217.656 14.1064H215.406V29.3796Z" fill="#111111"&gt;&lt;/path&gt;&lt;path d="M231.21 21.743C231.21 23.4889 231.264 24.6692 231.372 25.2837C231.43 25.612 231.502 25.8843 231.588 26.1008C231.682 26.3103 231.787 26.5303 231.902 26.7608C232.284 27.4661 232.897 28.0877 233.741 28.6254C234.57 29.1841 235.605 29.4774 236.845 29.5053C238.1 29.4774 239.146 29.1841 239.982 28.6254C240.811 28.0877 241.41 27.4661 241.778 26.7608C242.045 26.3906 242.228 25.8983 242.329 25.2837C242.423 24.6692 242.47 23.4889 242.47 21.743C242.47 19.9692 242.423 18.782 242.329 18.1814C242.228 17.5808 242.045 17.0954 241.778 16.7253C241.41 16.0199 240.811 15.3914 239.982 14.8397C239.146 14.281 238.1 13.9947 236.845 13.9807C235.605 13.9947 234.57 14.281 233.741 14.8397C232.897 15.3914 232.284 16.0199 231.902 16.7253C231.664 17.0954 231.487 17.5808 231.372 18.1814C231.264 18.782 231.21 19.9692 231.21 21.743ZM233.611 21.743C233.611 20.2415 233.669 19.2184 233.784 18.6737C233.885 18.1569 234.091 17.7344 234.401 17.4062C234.653 17.0919 234.985 16.83 235.396 16.6205C235.8 16.418 236.283 16.3098 236.845 16.2958C237.415 16.3098 237.909 16.418 238.327 16.6205C238.724 16.83 239.041 17.0919 239.279 17.4062C239.589 17.7344 239.802 18.1569 239.917 18.6737C240.025 19.2184 240.08 20.2415 240.08 21.743C240.08 23.2445 240.025 24.2606 239.917 24.7914C239.802 25.3221 239.589 25.7516 239.279 26.0799C239.041 26.3941 238.724 26.649 238.327 26.8446C237.909 27.075 237.415 27.1903 236.845 27.1903C236.283 27.1903 235.8 27.075 235.396 26.8446C234.985 26.649 234.653 26.3941 234.401 26.0799C234.091 25.7516 233.885 25.3221 233.784 24.7914C233.669 24.2606 233.611 23.2445 233.611 21.743Z" fill="#111111"&gt;&lt;/path&gt;&lt;g clip-path="url(#clip0)"&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M30.6817 21.007C30.6817 29.3225 23.9255 36.0632 15.5908 36.0632C7.25649 36.0632 0.500061 29.3225 0.500061 21.007C0.500061 12.6917 7.25649 5.95081 15.5908 5.95081C23.9255 5.95081 30.6817 12.6917 30.6817 21.007Z" fill="#ECB360"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M26.6575 19.5014C26.6575 26.9851 20.8016 33.0519 13.5788 33.0519C6.35565 33.0519 0.500061 26.9851 0.500061 19.5014C0.500061 12.0177 6.35565 5.95081 13.5788 5.95081C20.8016 5.95081 26.6575 12.0177 26.6575 19.5014Z" fill="#D76835"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M27.6635 17.9956C27.6635 24.648 22.4836 30.0408 16.0935 30.0408C9.70422 30.0408 4.52429 24.648 4.52429 17.9956C4.52429 11.3436 9.70422 5.95081 16.0935 5.95081C22.4836 5.95081 27.6635 11.3436 27.6635 17.9956Z" fill="#D33A41"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M26.6574 18.9996C26.6574 25.0972 21.9278 30.0407 16.0937 30.0407C10.2596 30.0407 5.53027 25.0972 5.53027 18.9996C5.53027 12.9014 10.2596 7.95825 16.0937 7.95825C21.9278 7.95825 26.6574 12.9014 26.6574 18.9996Z" fill="#B6CB46"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M25.6514 20.0031C25.6514 25.5467 21.147 30.0408 15.5906 30.0408C10.0347 30.0408 5.53027 25.5467 5.53027 20.0031C5.53027 14.4596 10.0347 9.96582 15.5906 9.96582C21.147 9.96582 25.6514 14.4596 25.6514 20.0031Z" fill="#66AD4A"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M21.6272 17.9958C21.6272 22.4306 18.0238 26.0258 13.5787 26.0258C9.13342 26.0258 5.53027 22.4306 5.53027 17.9958C5.53027 13.561 9.13342 9.96582 13.5787 9.96582C18.0238 9.96582 21.6272 13.561 21.6272 17.9958Z" fill="#AED7DC"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M22.6333 16.992C22.6333 20.8724 19.4804 24.0183 15.5908 24.0183C11.7012 24.0183 8.54852 20.8724 8.54852 16.992C8.54852 13.1114 11.7012 9.96582 15.5908 9.96582C19.4804 9.96582 22.6333 13.1114 22.6333 16.992Z" fill="#5BB1CF"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M22.6332 17.4936C22.6332 21.097 19.9307 24.0182 16.5968 24.0182C13.263 24.0182 10.5605 21.097 10.5605 17.4936C10.5605 13.8907 13.263 10.9695 16.5968 10.9695C19.9307 10.9695 22.6332 13.8907 22.6332 17.4936Z" fill="#25A8C3"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M15.5906 24.0182C12.8127 24.0182 10.5605 21.5465 10.5605 18.4975C10.5605 15.4485 12.8127 12.9771 15.5906 12.9771C18.3688 12.9771 20.6211 15.4485 20.6211 18.4975C20.6211 21.5465 18.3688 24.0182 15.5906 24.0182Z" fill="#1B1A18"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M18.3356 16.9058C17.8571 17.7045 16.9163 18.1665 16.2337 17.9368C15.5513 17.7075 15.3862 16.8736 15.8644 16.0747C16.3429 15.2757 17.2838 14.814 17.9662 15.0433C18.6487 15.2726 18.8138 16.1064 18.3356 16.9058Z" fill="#FFFFFE"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M153.838 26.651C153.598 25.9779 153.477 25.1247 153.477 23.9799C153.477 22.8353 153.598 21.9825 153.838 21.3089C154.511 19.3786 156.292 18.3237 158.624 18.3237C160.355 18.3237 161.726 18.9744 162.639 20.0072C162.712 20.0969 162.736 20.2318 162.616 20.3217L161.101 21.5558C160.98 21.6455 160.86 21.6233 160.764 21.511C160.187 20.9051 159.586 20.5684 158.624 20.5684C157.59 20.5684 156.796 21.0399 156.459 21.9825C156.267 22.5212 156.219 23.1498 156.219 23.9799C156.219 24.8106 156.267 25.4617 156.459 26.0004C156.796 26.9204 157.59 27.3919 158.624 27.3919C159.586 27.3919 160.187 27.0553 160.764 26.4493C160.86 26.337 160.98 26.337 161.101 26.4267L162.616 27.6612C162.736 27.7511 162.712 27.8633 162.639 27.9753C161.726 28.9855 160.355 29.6365 158.624 29.6365C156.292 29.6365 154.511 28.5816 153.838 26.651Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M172.029 29.3898C171.861 29.3898 171.74 29.3225 171.644 29.1651L168.71 24.6311L167.147 26.3144V29.1651C167.147 29.3 167.052 29.3898 166.907 29.3898H164.694C164.55 29.3898 164.454 29.3 164.454 29.1651V14.3506C164.454 14.2161 164.55 14.1263 164.694 14.1263H166.907C167.052 14.1263 167.147 14.2161 167.147 14.3506V23.1497L171.116 18.7953C171.26 18.6379 171.38 18.5707 171.572 18.5707H174.025C174.17 18.5707 174.217 18.7051 174.121 18.7953L170.442 22.7455L174.674 29.1651C174.747 29.2549 174.699 29.3898 174.554 29.3898H172.029Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M43.089 27.0553H46.5039C48.0912 27.0553 48.9808 26.2022 48.9808 24.9229C48.9808 23.6659 48.0912 22.8131 46.5039 22.8131H43.089C42.993 22.8131 42.9447 22.8579 42.9447 22.9476V26.9205C42.9447 27.0102 42.993 27.0553 43.089 27.0553ZM46.3597 20.4787C47.8026 20.4787 48.6923 19.6706 48.6923 18.4808C48.6923 17.2689 47.8026 16.4608 46.3597 16.4608H43.089C42.993 16.4608 42.9447 16.5055 42.9447 16.5953V20.3439C42.9447 20.4336 42.993 20.4787 43.089 20.4787H46.3597ZM40.1072 14.3506C40.1072 14.2161 40.2035 14.1263 40.3474 14.1263H46.4318C49.8947 14.1263 51.5299 15.7426 51.5299 18.1889C51.5299 19.9174 50.6644 20.9051 49.63 21.4213V21.4663C50.6401 21.8251 51.8184 23.0374 51.8184 24.9004C51.8184 27.9306 49.7742 29.3898 46.1913 29.3898H40.3474C40.2035 29.3898 40.1072 29.3 40.1072 29.1651V14.3506Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M53.8134 29.3897C53.6688 29.3897 53.5724 29.2999 53.5724 29.1651V18.7952C53.5724 18.6603 53.6688 18.5706 53.8134 18.5706H56.0256C56.1698 18.5706 56.2661 18.6603 56.2661 18.7952V19.7153H56.2903C56.8431 18.885 57.8291 18.3237 59.2962 18.3237C60.2097 18.3237 61.1236 18.6603 61.7248 19.2216C61.8452 19.3336 61.8694 19.4237 61.7728 19.5357L60.4982 21.0399C60.4023 21.1518 60.2818 21.1744 60.1618 21.0846C59.6326 20.7702 59.0795 20.5684 58.4544 20.5684C56.9394 20.5684 56.2661 21.5783 56.2661 23.3067V29.1651C56.2661 29.2999 56.1698 29.3897 56.0256 29.3897H53.8134Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M69.167 25.9779C69.3596 25.4165 69.4076 24.9003 69.4076 23.9799C69.4076 23.0599 69.3596 22.5659 69.167 21.9825C68.8301 21.0846 68.0851 20.5684 67.0028 20.5684C65.9205 20.5684 65.1509 21.0846 64.8144 21.9825C64.6222 22.5659 64.5739 23.0599 64.5739 23.9799C64.5739 24.9003 64.6222 25.4165 64.8144 25.9779C65.1509 26.8757 65.9205 27.3919 67.0028 27.3919C68.0851 27.3919 68.8301 26.8757 69.167 25.9779ZM62.2174 26.651C61.9527 25.888 61.8326 25.1697 61.8326 23.9799C61.8326 22.7906 61.9527 22.0722 62.2174 21.3089C62.8665 19.4237 64.6459 18.3237 67.0028 18.3237C69.3354 18.3237 71.1149 19.4237 71.7644 21.3089C72.0287 22.0722 72.1491 22.7906 72.1491 23.9799C72.1491 25.1697 72.0287 25.888 71.7644 26.651C71.1149 28.5366 69.3354 29.6365 67.0028 29.6365C64.6459 29.6365 62.8665 28.5366 62.2174 26.651Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M83.814 29.3898C83.6694 29.3898 83.5735 29.2999 83.5252 29.165L81.2888 22.2518H81.2409L78.9803 29.165C78.932 29.2999 78.8361 29.3898 78.6915 29.3898H76.7198C76.5752 29.3898 76.4793 29.2999 76.4314 29.165L72.7758 18.7953C72.7275 18.6604 72.8 18.5706 72.9443 18.5706H75.2528C75.4212 18.5706 75.5175 18.6378 75.5654 18.7953L77.8017 25.9331H77.8501L80.0623 18.7953C80.1106 18.6604 80.2307 18.5706 80.3749 18.5706H82.1064C82.2507 18.5706 82.3711 18.6604 82.4191 18.7953L84.7759 25.9331H84.8239L86.9401 18.7953C86.9881 18.6378 87.0844 18.5706 87.2528 18.5706H89.5612C89.7056 18.5706 89.7776 18.6604 89.7297 18.7953L86.0742 29.165C86.0262 29.2999 85.93 29.3898 85.7857 29.3898H83.814Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M90.2039 27.9307C90.1079 27.8409 90.1079 27.7065 90.2039 27.6166L91.5747 26.2698C91.6709 26.1801 91.8152 26.1801 91.9115 26.2698C92.7532 26.9881 94.0999 27.5043 95.3022 27.5043C96.721 27.5043 97.4424 26.9656 97.4424 26.2247C97.4424 25.5738 97.0337 25.1698 95.5186 25.035L94.268 24.9231C91.9115 24.6984 90.7087 23.5762 90.7087 21.7354C90.7087 19.6481 92.3201 18.3239 95.2059 18.3239C97.0096 18.3239 98.5251 18.8852 99.5588 19.6481C99.6794 19.738 99.6794 19.8724 99.6065 19.9622L98.4288 21.2868C98.3325 21.3988 98.2119 21.3988 98.0923 21.3316C97.3702 20.8601 96.2161 20.4336 95.0617 20.4336C93.9073 20.4336 93.3061 20.9052 93.3061 21.5559C93.3061 22.1847 93.7151 22.5661 95.2059 22.7009L96.4563 22.8132C98.8849 23.0375 100.039 24.2048 100.039 25.978C100.039 28.1328 98.3558 29.6366 95.1818 29.6366C92.8012 29.6366 91.166 28.7613 90.2039 27.9307Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M108.882 21.8476C108.569 20.9723 107.704 20.4561 106.621 20.4561C105.516 20.4561 104.649 20.9723 104.337 21.8476C104.241 22.117 104.192 22.3863 104.192 22.768C104.192 22.8578 104.241 22.9029 104.337 22.9029H108.882C108.978 22.9029 109.027 22.8578 109.027 22.768C109.027 22.3863 108.978 22.117 108.882 21.8476ZM101.884 26.6285C101.643 25.9331 101.475 25.1025 101.475 23.9799C101.475 22.8578 101.62 22.005 101.86 21.3089C102.509 19.4237 104.288 18.3237 106.597 18.3237C108.978 18.3237 110.71 19.4685 111.359 21.3089C111.624 22.0722 111.744 22.8131 111.744 24.5638C111.744 24.6982 111.647 24.7881 111.479 24.7881H104.337C104.241 24.7881 104.192 24.8331 104.192 24.923C104.192 25.2369 104.265 25.5064 104.361 25.7531C104.745 26.8084 105.66 27.3919 106.958 27.3919C108.256 27.3919 109.098 26.9429 109.675 26.3595C109.796 26.2472 109.916 26.2246 110.036 26.3144L111.455 27.4817C111.576 27.5715 111.576 27.6838 111.479 27.7961C110.493 28.8732 108.858 29.6365 106.718 29.6365C104.265 29.6365 102.533 28.5144 101.884 26.6285Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M113.738 29.3897C113.594 29.3897 113.498 29.2999 113.498 29.1651V18.7952C113.498 18.6603 113.594 18.5706 113.738 18.5706H115.951C116.095 18.5706 116.191 18.6603 116.191 18.7952V19.7153H116.215C116.768 18.885 117.754 18.3237 119.221 18.3237C120.135 18.3237 121.049 18.6603 121.65 19.2216C121.77 19.3336 121.794 19.4237 121.698 19.5357L120.423 21.0399C120.328 21.1518 120.207 21.1744 120.087 21.0846C119.558 20.7702 119.004 20.5684 118.38 20.5684C116.865 20.5684 116.191 21.5783 116.191 23.3067V29.1651C116.191 29.2999 116.095 29.3897 115.951 29.3897H113.738Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M122.113 27.6166C122.016 27.5267 121.969 27.3919 122.065 27.2796L123.556 25.6634C123.652 25.5514 123.796 25.5514 123.892 25.6413C124.95 26.4268 126.513 27.2571 128.341 27.2571C130.289 27.2571 131.419 26.337 131.419 25.0578C131.419 23.9578 130.698 23.2395 128.437 22.9476L127.571 22.8353C124.421 22.4314 122.642 21.0171 122.642 18.4808C122.642 15.72 124.805 13.8795 128.172 13.8795C130.217 13.8795 132.165 14.4855 133.463 15.4055C133.583 15.4957 133.608 15.5855 133.511 15.72L132.357 17.3808C132.261 17.4932 132.14 17.5157 132.02 17.4484C130.698 16.6404 129.471 16.2587 128.1 16.2587C126.441 16.2587 125.527 17.1118 125.527 18.3012C125.527 19.3561 126.321 20.0744 128.533 20.3664L129.4 20.4786C132.549 20.8826 134.281 22.2741 134.281 24.9004C134.281 27.6166 132.189 29.6366 128.125 29.6366C125.72 29.6366 123.387 28.7387 122.113 27.6166Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M139.264 29.5804C136.931 29.5804 136.041 28.5255 136.041 26.4153V20.7145C136.041 20.6246 135.994 20.5796 135.897 20.5796H135.127C134.983 20.5796 134.887 20.4898 134.887 20.3549V18.8511C134.887 18.7166 134.983 18.6268 135.127 18.6268H135.897C135.994 18.6268 136.041 18.5817 136.041 18.4919V15.529C136.041 15.3945 136.137 15.3047 136.281 15.3047H138.494C138.639 15.3047 138.735 15.3945 138.735 15.529V18.4919C138.735 18.5817 138.783 18.6268 138.879 18.6268H140.418C140.562 18.6268 140.659 18.7166 140.659 18.8511V20.3549C140.659 20.4898 140.562 20.5796 140.418 20.5796H138.879C138.783 20.5796 138.735 20.6246 138.735 20.7145V26.3259C138.735 27.089 139.072 27.3357 139.817 27.3357H140.418C140.562 27.3357 140.659 27.4256 140.659 27.5604V29.3558C140.659 29.4906 140.562 29.5804 140.418 29.5804H139.264Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+            &lt;path fill-rule="evenodd" clip-rule="evenodd" d="M149.175 25.7531V24.923C149.175 24.8331 149.126 24.7881 149.03 24.7881H147.106C145.375 24.7881 144.605 25.2369 144.605 26.2472C144.605 27.145 145.302 27.594 146.601 27.594C148.261 27.594 149.175 26.988 149.175 25.7531ZM149.463 29.3897C149.319 29.3897 149.223 29.2999 149.223 29.1651V28.3795H149.198C148.645 29.1203 147.562 29.6365 145.928 29.6365C143.811 29.6365 142.032 28.6041 142.032 26.337C142.032 23.9799 143.811 22.9029 146.674 22.9029H149.03C149.126 22.9029 149.175 22.8578 149.175 22.768V22.2518C149.175 21.017 148.549 20.4561 146.601 20.4561C145.302 20.4561 144.509 20.7927 143.955 21.1969C143.836 21.2867 143.691 21.2642 143.619 21.1518L142.729 19.6706C142.657 19.5582 142.681 19.4459 142.778 19.3786C143.715 18.7502 144.99 18.3237 146.889 18.3237C150.425 18.3237 151.724 19.4459 151.724 22.0949V29.1651C151.724 29.2999 151.627 29.3897 151.483 29.3897H149.463Z" fill="#111111"&gt;&lt;/path&gt;<br/>
+           &lt;/g&gt;&lt;defs&gt;<br/>
+            &lt;filter id="filter0_d" x="180.442" y="7.55676" width="73.0578" height="31.3019" filterunits="userSpaceOnUse" color-interpolation-filters="sRGB"&gt;<br/>
+             &lt;feflood flood-opacity="0" result="BackgroundImageFix"&gt;&lt;/feflood&gt;<br/>
+             &lt;fecolormatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"&gt;&lt;/fecolormatrix&gt;<br/>
+             &lt;feoffset dx="1" dy="2"&gt;&lt;/feoffset&gt;<br/>
+             &lt;fegaussianblur stddeviation="1"&gt;&lt;/fegaussianblur&gt;<br/>
+             &lt;fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"&gt;&lt;/fecolormatrix&gt;<br/>
+             &lt;feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"&gt;&lt;/feblend&gt;<br/>
+             &lt;feblend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"&gt;&lt;/feblend&gt;<br/>
+            &lt;/filter&gt;<br/>
+            &lt;clippath id="clip0"&gt;<br/>
+             &lt;rect width="175.054" height="31.0492" fill="white" transform="translate(0.500061 5.95081)"&gt;&lt;/rect&gt;<br/>
+            &lt;/clippath&gt;<br/>
+           &lt;/defs&gt;<br/>
+          &lt;/svg&gt;&lt;/a&gt;<br/>
+         &lt;nav class="space-x-4 ml-6" style="display: flex;"&gt;<br/>
+          &lt;a id="offers" class="Navbar_link__3Blki" href="/offers"&gt;&lt;strong&gt;Offers&lt;/strong&gt;&lt;/a&gt;&lt;a id="orders" class="Navbar_link__3Blki" href="/orders"&gt;&lt;strong&gt;Orders&lt;/strong&gt;&lt;/a&gt;&lt;a id="favourites" class="Navbar_link__3Blki" href="/favourites"&gt;&lt;strong&gt;Favourites&lt;/strong&gt;&lt;/a&gt;<br/>
+         &lt;/nav&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="flex flex-1 justify-end align-center space-x-8"&gt;<br/>
+         &lt;span class="username"&gt;demouser&lt;/span&gt;<br/>
+         &lt;nav class="UserNav_root__343id align-center pt-1"&gt;<br/>
+          &lt;a class="Navbar_link__3Blki logout-link" id="logout" href="/offers"&gt;Logout&lt;/a&gt;<br/>
+         &lt;/nav&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;main style="padding: 20px 2%; margin: 0px auto;"&gt;<br/>
+      &lt;div class="filters"&gt;<br/>
+       &lt;h4 class="title"&gt;Vendors:&lt;/h4&gt;<br/>
+       &lt;div class="filters-available-size"&gt;<br/>
+        &lt;label&gt;&lt;input type="checkbox" value="Apple"&gt;&lt;span class="checkmark"&gt;Apple&lt;/span&gt;&lt;/label&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="filters-available-size"&gt;<br/>
+        &lt;label&gt;&lt;input type="checkbox" value="Samsung"&gt;&lt;span class="checkmark"&gt;Samsung&lt;/span&gt;&lt;/label&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="filters-available-size"&gt;<br/>
+        &lt;label&gt;&lt;input type="checkbox" value="Google"&gt;&lt;span class="checkmark"&gt;Google&lt;/span&gt;&lt;/label&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="filters-available-size"&gt;<br/>
+        &lt;label&gt;&lt;input type="checkbox" value="OnePlus"&gt;&lt;span class="checkmark"&gt;OnePlus&lt;/span&gt;&lt;/label&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="shelf-container"&gt;<br/>
+       &lt;div class="shelf-container-header" style="margin-right: 50px;"&gt;<br/>
+        &lt;small class="products-found"&gt;&lt;span&gt;25 Product(s) found.&lt;/span&gt;&lt;/small&gt;<br/>
+        &lt;div class="sort"&gt;<br/>
+         Order by&lt;select&gt;&lt;option value=""&gt;Select&lt;/option&gt;&lt;option value="lowestprice"&gt;Lowest to highest&lt;/option&gt;&lt;option value="highestprice"&gt;Highest to lowest&lt;/option&gt;&lt;/select&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="clearfix"&gt;&lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="iPhone12-device-info.png" id="1"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/iPhone12-device-info-ae9cbd420e3fd8ba91e664d60ac12117.png" alt="iPhone 12" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone 12&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;799&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 9 x&lt;/span&gt;&lt;b&gt; $ 88.78&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="iPhone12-device-info.png" id="2"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/iPhone12-device-info-ae9cbd420e3fd8ba91e664d60ac12117.png" alt="iPhone 12 Mini" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone 12 Mini&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;699&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 9 x&lt;/span&gt;&lt;b&gt; $ 77.67&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="iPhone12-device-info.png" id="3"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/iPhone12-device-info-ae9cbd420e3fd8ba91e664d60ac12117.png" alt="iPhone 12 Pro Max" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone 12 Pro Max&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;1099&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 9 x&lt;/span&gt;&lt;b&gt; $ 122.11&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="iPhone12Pro-device-info.png" id="4"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/iPhone12Pro-device-info-5e543206a6555d05dfe97191c4283f73.png" alt="iPhone 12 Pro" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone 12 Pro&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;999&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 5 x&lt;/span&gt;&lt;b&gt; $ 199.80&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="iPhone11-device-info.png" id="5"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/iPhone11-device-info-271b6e122eab30028885b99ddf1897f2.png" alt="iPhone 11" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone 11&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;599&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 8 x&lt;/span&gt;&lt;b&gt; $ 74.88&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="infocardiphone11Pro.png" id="6"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/infocardiphone11Pro-b38c45f2dbc8bf3d015ad5df3675c44e.png" alt="iPhone 11 Pro" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone 11 Pro&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;699&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 3 x&lt;/span&gt;&lt;b&gt; $ 233.00&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="infocard.png" id="7"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/infocard-c81eec0e8c6a112a8d29e14b666bd73a.png" alt="iPhone XS" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone XS&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;549&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 4 x&lt;/span&gt;&lt;b&gt; $ 137.25&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="infoiphoneXR.png" id="8"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/infoiphoneXR-1e7e90357d8dbe28e588246dc25bc6e8.png" alt="iPhone XR" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone XR&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;499&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 5 x&lt;/span&gt;&lt;b&gt; $ 99.80&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="infocard.png" id="9"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/infocard-c81eec0e8c6a112a8d29e14b666bd73a.png" alt="iPhone XS Max" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;iPhone XS Max&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;649&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 7 x&lt;/span&gt;&lt;b&gt; $ 92.71&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="samsung-S20-device-info.png" id="10"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/samsung-S20-device-info-4ab282506f4122c9b67a274bf84d0904.png" alt="Galaxy S20" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy S20&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;999&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 9 x&lt;/span&gt;&lt;b&gt; $ 111.00&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="samsung-S20+-device-info.png" id="11"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/samsung-S20+-device-info-8ee506199a5b71b64f3a3110c23a1469.png" alt="Galaxy S20+" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy S20+&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;1199&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 9 x&lt;/span&gt;&lt;b&gt; $ 133.22&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="samsung-S20Ultra-device-info.png" id="12"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/samsung-S20Ultra-device-info-b93a8e6bcaa77328bffa2d6e6f03344a.png" alt="Galaxy S20 Ultra" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy S20 Ultra&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;1399&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 12 x&lt;/span&gt;&lt;b&gt; $ 116.58&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="samsung-S10-device-info.png" id="13"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/samsung-S10-device-info-9f3928ba960dc83a678cb6ff1462db2f.png" alt="Galaxy S10" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy S10&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;899&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 5 x&lt;/span&gt;&lt;b&gt; $ 179.80&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="samsung-s9-device-info.png" id="14"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/samsung-s9-device-info-d75c525dac1b0cf0a136fd01a55bc50d.png" alt="Galaxy S9" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy S9&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;699&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 5 x&lt;/span&gt;&lt;b&gt; $ 139.80&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="Note20-device-info.png" id="15"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/Note20-device-info-99c852e5f52ddbc899791be3dd959250.png" alt="Galaxy Note 20" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy Note 20&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;999&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 7 x&lt;/span&gt;&lt;b&gt; $ 142.71&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="Note20Ultra-device-info.png" id="16"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/Note20Ultra-device-info-a1bbf05183e009b70302625ccc0b6956.png" alt="Galaxy Note 20 Ultra" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Galaxy Note 20 Ultra&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;1299&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 7 x&lt;/span&gt;&lt;b&gt; $ 185.57&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="GooglePixel4-device-info.png" id="17"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/GooglePixel4-device-info-89a633a90cb47defe8be62ef9d7fab55.png" alt="Pixel 4" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Pixel 4&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;899&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 5 x&lt;/span&gt;&lt;b&gt; $ 179.80&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="GooglePixel3-device-info.png" id="18"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/GooglePixel3-device-info-aa71987dd931d10cec5869115acb14d8.png" alt="Pixel 3" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Pixel 3&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;599&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 5 x&lt;/span&gt;&lt;b&gt; $ 119.80&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="device-info.jpg" id="19"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAAGBgYGBwYHCAgHCgsKCwoPDgwMDg8WEBEQERAWIhUZFRUZFSIeJB4cHiQeNiomJio2PjQyND5MRERMX1pffHynAQYGBgYHBgcICAcKCwoLCg8ODAwODxYQERAREBYiFRkVFRkVIh4kHhweJB42KiYmKjY+NDI0PkxERExfWl98fKf/wgARCACsAS4DASEAAhEBAxEB/8QAHQABAAAHAQEAAAAAAAAAAAAAAAECAwQFBggHCf/aAAgBAQAAAADqkAAAAAAAAAAAAAAteVLG6kmWVOeeJ6X7yAAAGg/PLZqWDoZrXq6oo0vQfomAAAGkfOyEZGb2/wBHv/JcBsmdl7nAAADQvnxBFl9n9soaHr15G87lAAADzziS5jVkrU/UNBy+GksM13wAAAHm/E1yyVtLh+itBw1hNvup95AAABoXDNeKapiPZ9Oy2UxFk7wAAADzniGrFNPmKGU2D27z1juuQAAA8+4cqJkd32TV85v+u7X5t2eAAAHnPENRGMLHYNz0abIew6V2qAAAGkcJTxikt85tuoW156z553uAAAGi8K1CNOtuVXUK7ITd+AAABo/CVRMo7b6NaYXE5PPec/QIAAANI4RnUq1Lb/Yq9hj7qr439AgAAA0bhOdGNDIeswnxeTxmlfQUAAANC4bmijb67GakjNtf0bAAADBcM0iOP1KFaZRp7r9EgAAAWcgttdtKhPJn9iAAAAAAAAAAAAAAH//EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/2gAIAQIQAAAAAAAAAAAOnAABJ2AAAm5H1M+CYAJuad+bz+AAsPSZ6KAAWGvV5uK4AFhp1ZvPkACw1Uebq6ACwejT5N4ALDRrw/J/RgAsLt2D5z2gAWGq7JkkACwnn7zoALDmvJOkAFhZOpSACYcRABMgAAAAAAAAAAB//8QAGgEBAAMBAQEAAAAAAAAAAAAAAAMEBQECBv/aAAgBAxAAAAAAAAAAAAAAAd4AAAa3yc97oABJ89Z0fYABnwTWLIABSo6VrgABUo2r4AAj8aefIAARUp9OuAAVKV/eygACDM0dakAAVaduz6AAFKe3EAATZE/bIABWim5ZAAPHO99AAAAAAAAAAAAAD//EADQQAAAGAgECAgcIAgMAAAAAAAECAwQFBgAHERIUCEAQFRggMjM3ExYXISIjMUFDYCQlNv/aAAgBAQABCAD/AFd+9ax7F29dSXiSmO7U9Vh4k7aAcYh4h7ioTqT9pazZ7S1kwniRsZzFIVz4j7WBuhEPElcf79pK2YHiOtOe0jZ89pGy4HiPsv8Aeud4I2WaRh5Hy+1fpzZxxT4z5JqVQa/DkYtDtisllwcqFUcKnDK4PE2xH0LHTP0dCaqZS8G+3Qz7dHFDlMPJc1UIhsSseY24YPw4s+KfGbOQ4wFFCkMQPRXPym2ONqO2UrTGWGtaoqcpCtHjiR07T0GpjpS9SjGYqgipEM0zcGQo7Z6PS1JqYgtTKGq9dJB7Ep4E8vtoghrezCJmzkxjCXtHedm7zs3mdm8yAbOE5liJ4/1gDKObHhrlX4SsxBXTvY9UfD05NjHOzCcirWMMomkm9JHGaoAq5cpNW7RONqrld1e6aKvl9tHITW9mE7cf2y4A5yOEIBg5MPIGEBbG/wCwYcx0ioonFCNbo0PP1lF0M4L6Im3MevIPTtWJEWnr6ZRci4RfPnS6BCGKwXMUTFqJezvNVUX8vuL6a2TEPlhnOCOdksuUirVdMEjlILfjv2PLBX7NqiOaqegrCumY7XIkFjbFI/EzJmVMqcqQqgnOcCuFADKrTpqRi5F4zYHVWuVaMby+1/pvZ8Q+WXAHOc/SP8hiA/8ANZY2AOyRzUsiBJB62y9PSPrS9XTYwcrblFkYc2nb1+6OKV6XiTLLPW0qo2Tc5UF01r/UTE8vt8TF1pZBKj8svp5wBxMeHbPI9UripJMEo2Tka64cHAzM6dbKVTXsVY3Dd65iI2K2MJF49/ZqRamjSKaqzlFrdTkK2RxYpOvqbBpZoHy+6R41lY8R+WX3Sjw5aZVr1NwsA1RQhrlIThphq4eEMwTVbr0t+zZAodELm1VdyBgkLE0fs2jZaLdOl2iz1tMJSSN6ppZHy+3kRV1rZABL5YYPuc/vtsa9RmyHVGmMkg8cBYypHTTVMdu5aKCQUXTsoHEjpZgZJIqGu0VBipgDyEopObDpgl8vt36b2fEvllwfcN81vjUomaIAEakubuECWQ5GzZgkqYv6f0gisBxAV/yQbCpQpdJKHsRy1x0LvYFVWHy+2iAGtrNiPwB7qnxoZEE5RbcU92ZvLGON2dneKoEIkTnpKJgUcAUViuF0hAMj3SSCLnirgIXipCPl9vfTey4j8AYI4HpW/lHKXBBLqRTM9qpsVXitnbFSn+sIxByhTazFS0XLScjOVpsxtYRDeyVFpERKUkmxosAuzYtT1XgblUB8xt76bWbEvgD0qAIjgc9IdS/+LKgzkpUImOjjUC0TBiLvfwznyIGQTj9Y2eIXOvGK6dm3DhRyu51JYnpUCOlNa3lrBuY9nVB5ulR8xt/6b2XEvgL6QH0L/wCLICYfxCsc+YxO1rU4dos2p9zWbp5CL2pdJeSRYNQ3VasjNtXSSfIMmznclvdNVkSVP/2lSAPL7VJzri0YQg9IZ0DnQOdA50DjkogCY4V85IUCF9YOv7GTeD/J3i5/i71xgvVxAQH1g6yiOllrxVwP5e1wh5ysTEYRaOM3VOgv2qedqnnakztk8kkSJoENh2J+oRL2SmEa9JeB7YM7cMO0MYeQ7NTNcRLx1e60RHzD6Jh35+t391Kvn3Uq+fdSr4FUq+GrFX5/KQ1br9+uZwsbTuuC4Om9c4OnNcgHODpzXQfngac11h9P66D+YGn1mvGVPEf6x//EAEQQAAIBAgIFBQwHBgcAAAAAAAECAwARBBIFEyExQSJAUZKyBhAUIDJCUlNUYZHSFXFygZSjsSNgk6GzwjNDRVVigsH/2gAIAQEACT8A/deURwYeF5ZXPBEFya0Hg0w4PIOJLvIepWhtFfm/PXc9gWA4qJa0Jo78ytCYD8ytB4E9etFaMHXNYDR3UesBgeoa0fgq0dguqa0dg+oawGE6hrALBPPfweWLyCw8xgecex/3DvQzjSYzeHM18pp5fDlcarKjXtwZXGwW6KUAM17Ddc7+8pazNsH2T3oslkAbbe56ahVj0kmsKnxNYVPiajCe4d725eceyDtiumlqRgrb1BIB7/pt2TRdzOlyA4AU5ytiKOPWSReUFlUDs1Jj83vlX5aWZssuW5fhUUgGYC+ejlIALGWUKKxw1wVDq0IZQS5DAt9mzCnzZ8au3nHso7YqByCeArDydWsNL1aw0vVrDS9WoXUZ22kW801NIIHwJlRRutmNYyzGAXjUZ3DVicQgUb2hO+sZMsDyqTIqZiRxsKxmMlCv+1KQXIAFw6dO3ZapcSrXXWFUvZbm5F+NrVjJStrusmymQn6T4c49mA+LjxJVTovck/CiNnRur1j9hqJHg+DaEfZzM3/tK0GN1rZZ0PomseJ1DkzOiBSwmN3qeQYYBUUFQx1flZTWMljkRlKyqoVhYEDdUrZMoGXds32oqRbpogKMeCecepi/qr4iGRGUBlW2aNwLFWH6GnVnC/tMpuFPo3G8jjW0ax+waHm1vgmJH1PtpVVjhxnpg5GTafqrDRMQtgpGylAzC4AqaEJhbllZiGJAzWFPrGbHCwUbeceyDtjxAO96xuwaO3LX+ZErdWlLRQOsTP0lawqOyIrtncIqLu2k1gsICB7StYIZIBlk5YOU/dWIddatnVZGUMPeBvpbH6TW/OPURjrSqPG9Y3YNdz+txROZcal2fLm3WFYZ0neEpy1IMebiaVFeV85Lty3L7c1aQbCziZcNCVkCh2O0hh0CtIYcDDAl8akpZ8SGFxYEDJWl45sBjMWI735cckm1Q5PlDpNfSGMeQu2N1cWsXVpvkA4AGi4SDGgMHhKAkkbVzAE849VD/WXxvWN2TU6QwoCFfVgnaSSB00kI8OjLTYhwHkAQZQBSJNGhyrnHKtUBCGdGYF/OXcaiZjIhEgzmp3EeF/wyDurEyYiYRZc7eSBwAvV9ecahA2EZSw5xYEQI3VkU+N6Z7JpjZUsPjuFZlURZHcbQuY0xAmhjb69m8CmZb2PQbHcTTNbNyiOIFGQTF21ubyLcCCP51JIJoogYlYFQuZdlr7wTRAZZ4E28Gz7b849kHbHjemeyaueTQJ1ihWS2YHbszLRIKQqhAFgCo3DNThrnkHNnP1GrAqeVttapWkKnk4baAiHadvQ9NkWOLz5iWChbhQWpSpbSkOw8ASLc49kHbHjemf0okEIWuPdTZsyG6HzhxIJ4rQGqhS/lKTtp0XZ5Tbh9dYpGKjkLw+q4FTEKq2ABvsrEMkk6mJ1BRUdN9mDA0AB9Kw26w5x7KO2PG9M/pUjJHNnMhHlZYwWtHfz2tYVhceolkEDYbEurlyVL5kP/AFrDIpZbtKQBqTlLW96bNrVr5UwjJFFhYX1RZ3TMC7gEgViJDBKkMsbTACVEmTPkf/mKxLtGZ9RqvOL2vcE19InH4vDRSrjUYeDRmaPWCycYk3O1cdKQ9oc49lHbHiAkW2W6a38a9I/pUuqxTkskxcoIhHdzISNvJruzTGGO8amaGUFB7lrumgSIxmMoElsUO3LXddDhJHXKzRxSbRXdRhpJ3fO8rxSl2bpJrusw8qwgiJXiksl67sFkwurcjADWRo43lAeF6H+qw9oc49lHbHjekf0qbVzwAlDa4N7gqw4gitH6GjeZzsIMSk2vcs71gtHdR/mrB6HE0oYqZc0acgZtrFqwWjOo/wA1YPQwllvkMt4k2DNtZmqPAQGRCmtjiOdfs3Nf7rB2hzj2P+4eN6R/SnAA3bBTDqipP5Cip+4Uw+AoqR0FRTj4Cm3aUw/bHODy8ThJEj+1wq0M0bZZIpDkdGHAg1PF1xU8XXFTxdcVPD1xU0XlHzx0VtU+SRuIoGoAx6SSKwy/Fqwq9ZqjyjoFzQNRFiMfFIfckRzs3OdGYSd9waWFHIA+0K0Bo38LFWgNGfhYvlrQGjPwsXy1oDRv4aOtAaMv0+Cx1oCBZW36otCD90ZArQv50vzVoT86WtCfnS1oQfxpfmrQa/xZa0Ev8WWtFQYZ5FyySi5kZegs1z+7P//EADARAAIBAwIFAwIEBwAAAAAAAAECAwARIQQSMUBBUWETIjIFsRQzcaEVI1BSYGJy/9oACAECAQE/AP6ZarVbkTe4rHS/nlDWjm0+qaRULXjuH8MDal0cJgdzuuK9GEQzud3sGLUJ4HO1d1/I5DTaRdP6gjCANZ2PD5Zv+9B2OnkAKEBc2OajZtktgOl6KL8rHdc8hGIGU+y67R+vAA2pIYli1Q4suAaiVAJDbOKkkUgjkNKTdr/20VuupP8Aov2qNCglbcTilk3yv7T4PIaY3YDuD9qMigalTi/XwuKWJpYpyhGFzSRbWla3G3TkG1QZ4TtVdiqABbNu9qk1KSRo8MgsRtue4NiKQSxJLaeWQGUvtJtYjAUW6CjrX3Lp02m9zLwuBxHIQ6YPIu7FzcCpkgQqjRrYDoKjTTm7Lb2kfalfQfjNRZh65wB4A5CA/wAwHsK1QvIDSjZG4UDJH7VBEW+vTNf8skkf9LYHkIAdygcSDWoA3nIwuRR4dDmtBE38W+rSNwDIqjwRfkNL+dH0Nai/rMfFHvSxhZJn2WLEZHW2BfkIJSNTGu0nNj4xTa6aSLUyJBcrJtQfG9zbJPatRNJDLGDs2mRI2W/uJckAr3Atmop/V9cbCNjlc9bchC6xyk8W+X6AWGam1KyqAUwFsB4pliZ43aIFkJKMeIJFsUSCjY5BUU2JuMU8SKL5rYO5plCqeQDsOtGRzxNb270WY9f8T//EAC8RAAIBAwMDAwIEBwAAAAAAAAECAwAEERIhQRMxQAUUUWFxIiVCsTJQUmCBkcH/2gAIAQMBAT8A/n4xv43q3p8dn6b6feRSMeucMrcELmnvZxPGg04ajcTdWFBp/FnNBZB/FjwPU/UnurayRy56bOiKOAAoH7U0YF1EWDqS22alVNcBJNKWzpyMY8CcyhY8Nhuo1SzSvLaHsrbkfWpdWqKo1IYHwLrGI8cNvQYq1qMfrf8AepWDmIBQKKaVXwLhQEbPBBH+66bH2rjfHcc5bemlEcsCuDlicU0gKxjwJYYOmBHrOpcyFv6iePpUds0UkiTxHY6gAfkZFRGB5oxKiRgqEZwuSFOCT99qFmMidtW2yHjwJZtCMRvp71DJNIruHYk/NO8uynkGmFyLSBQMRDcnwJwOkw+T/wBq0JEZonVIrHgGpJPy2MfOAD/nJ8CfaJ2PYEVbE9PsSCdjXPxtUzgWVog5BJP228C8Le0cZOnPbjarbAhQfU1njig+VjXOcZ8C8twbBiJFB0at+53q1hgEVk81wR1Axk2z01DYGBzkb1E1kUuI26pnCh4mGyhR31Vc2XtfZMZkfrQCTC/pyOx8C/QyQRIAoVY1H3Lb1FbMjZ6ma6JyTncjBP070FKyJk+BLI7PnAJGy54FRyyMd8UJGzSsWkXPgGND3FCKMdlrQnxQRQcgf2n/AP/Z" alt="Pixel 2" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;Pixel 2&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;399&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 3 x&lt;/span&gt;&lt;b&gt; $ 133.00&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="OnePlus8-device-info.png" id="20"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/OnePlus8-device-info-8dcc8a8866758f442dcd6320b427ddb1.png" alt="One Plus 8" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;One Plus 8&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;799&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 6 x&lt;/span&gt;&lt;b&gt; $ 133.17&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="OnePlus8-device-info.png" id="21"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/OnePlus8-device-info-8dcc8a8866758f442dcd6320b427ddb1.png" alt="One Plus 8T" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;One Plus 8T&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;899&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 6 x&lt;/span&gt;&lt;b&gt; $ 149.83&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="OnePlus8-device-info.png" id="22"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/OnePlus8-device-info-8dcc8a8866758f442dcd6320b427ddb1.png" alt="One Plus 8 Pro" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;One Plus 8 Pro&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;899&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 6 x&lt;/span&gt;&lt;b&gt; $ 149.83&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="OnePlus7T-DeviceInfo.png" id="23"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/OnePlus7T-DeviceInfo-474bb8055a5f4e9844902c12686fe7a7.png" alt="One Plus 7T" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;One Plus 7T&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;599&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 6 x&lt;/span&gt;&lt;b&gt; $ 99.83&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="oneplus7device-info.png" id="24"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/oneplus7device-info-f5dd98801fff2db5313fbd1a184ff12a.png" alt="One Plus 7" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;One Plus 7&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;499&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 3 x&lt;/span&gt;&lt;b&gt; $ 166.33&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="shelf-item" data-sku="Oneplus6T_infocard.png" id="25"&gt;<br/>
+        &lt;div class="shelf-stopper"&gt;<br/>
+         &lt;button class="MuiButtonBase-root MuiIconButton-root Button " tabindex="0" type="button" aria-label="delete"&gt;&lt;span class="MuiIconButton-label"&gt;<br/>
+           &lt;svg class="MuiSvgIcon-root Icon" focusable="false" viewbox="0 0 24 24" aria-hidden="true"&gt;<br/>
+            &lt;path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"&gt;&lt;/path&gt;<br/>
+           &lt;/svg&gt;&lt;/span&gt;&lt;span class="MuiTouchRipple-root"&gt;&lt;/span&gt;&lt;/button&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__thumb"&gt;<br/>
+         &lt;img src="/_next/static/images/Oneplus6T_infocard-f7aca55bf5ed2d738101270c59c704e4.png" alt="One Plus 6T" style="height: 100%;"&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;p class="shelf-item__title"&gt;One Plus 6T&lt;/p&gt;<br/>
+        &lt;div class="shelf-item__price"&gt;<br/>
+         &lt;div class="val"&gt;<br/>
+          &lt;small&gt;$&lt;/small&gt;&lt;b&gt;429&lt;/b&gt;&lt;span&gt;.00&lt;/span&gt;<br/>
+         &lt;/div&gt;<br/>
+         &lt;div class="installment"&gt;<br/>
+          &lt;span&gt;or 3 x&lt;/span&gt;&lt;b&gt; $ 143.00&lt;/b&gt;<br/>
+         &lt;/div&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="shelf-item__buy-btn"&gt;<br/>
+         Add to cart<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="clearfix"&gt;&lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+      &lt;div class="clearfix"&gt;&lt;/div&gt;<br/>
+     &lt;/main&gt;<br/>
+     &lt;div class="float-cart"&gt;<br/>
+      &lt;span class="bag bag--float-cart-closed"&gt;&lt;span class="bag__quantity"&gt;0&lt;/span&gt;&lt;/span&gt;<br/>
+      &lt;div class="float-cart__content"&gt;<br/>
+       &lt;div class="float-cart__header"&gt;<br/>
+        &lt;span class="bag"&gt;&lt;span class="bag__quantity"&gt;0&lt;/span&gt;&lt;/span&gt;&lt;span class="header-title"&gt;Bag&lt;/span&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="float-cart__shelf-container"&gt;<br/>
+        &lt;p class="shelf-empty"&gt;Add some products in the bag &lt;br&gt;:)&lt;/p&gt;<br/>
+       &lt;/div&gt;<br/>
+       &lt;div class="float-cart__footer"&gt;<br/>
+        &lt;div class="sub"&gt;<br/>
+         SUBTOTAL<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="sub-price"&gt;<br/>
+         &lt;p class="sub-price__val"&gt;$ 0.00&lt;/p&gt;&lt;small class="sub-price__installment"&gt;&lt;/small&gt;<br/>
+        &lt;/div&gt;<br/>
+        &lt;div class="buy-btn"&gt;<br/>
+         Continue Shopping<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;footer&gt;<br/>
+      &lt;hr style="padding: 0px; margin: 0px;"&gt;<br/>
+      &lt;div class="mx-auto max-w-8xl px-6"&gt;<br/>
+       &lt;div class="py-12 flex flex-col md:flex-row justify-between items-center space-y-4"&gt;<br/>
+        &lt;div&gt;<br/>
+         &lt;span&gt;© 2020 BrowserStack. All rights reserved.&lt;/span&gt;<br/>
+        &lt;/div&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/div&gt;<br/>
+     &lt;/footer&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;footer&gt;&lt;/footer&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;script id="__NEXT_DATA__" type="application/json"&gt;{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"A4W2e_gd6IfbDVjxfbNGN","nextExport":true,"autoExport":true,"isFallback":false,"head":[["meta",{"charSet":"utf-8"}],["title",{"children":"StackDemo"}],["link",{"rel":"icon","href":"/favicon.svg","sizes":"any","type":"image/svg+xml"}],["meta",{"name":"viewport","content":"initial-scale=1.0, width=device-width"}]]}&lt;/script&gt;<br/>
+  &lt;script nomodule="" src="/_next/static/chunks/polyfills-1509bd3fd78666178104.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/main-127f4130b2ee8251cb07.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/webpack-248a2eecd85f348c85bf.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/framework.9707fddd9ae5927c17c3.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/412b7dee.7b37a38a8911fc5fb44b.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/commons.8dd95e2c8a426fce4243.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/f86b6e29883aa668a624259c19aba9c4b16c8858.45364f83391b4c7c6cfc.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/680059dc96e4c38580eb8670aeeedd940b19f861.f79e512e2fc010cbc361.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/styles.b589c95bae47a4b56802.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/pages/_app-37737f2090c5b0225f19.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/29107295.cc37323fff835cb3f1a5.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/b8893a6f06b70a9cc8257c2531fbea864096704d.05e7f7f46ea57d13f14e.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/5dd68d992e454f53e934be0a6bdc449c090bf9c7.be8cc35b25cafdb02160.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/2b8c65fe6e4196f9b8c8b1e63b2b0283938369f1.26e165a8ba5ecf775e27.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/pages/index-8721a89f5234d4c7bdb7.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/A4W2e_gd6IfbDVjxfbNGN/_buildManifest.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/A4W2e_gd6IfbDVjxfbNGN/_ssgManifest.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/pages/offers-3832cb0fdc01a44c7e74.js"&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/pages/signin-6dcec9a5c1deedd4e696.js"&gt;&lt;/script&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
